@@ -1,0 +1,28 @@
+@import "main";
+@import "fonts.css";
+@import "about.css";
+@import "path.css";
+@import "slider-work.css";
+@import "slider-feedback.css";
+@import "call-form.css";
+@import "footer.css";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width:100% ;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+}
+
+
+
+

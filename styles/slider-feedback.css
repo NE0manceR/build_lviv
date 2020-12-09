@@ -1,0 +1,105 @@
+.slider-feedback {
+  display: grid;
+  grid-template-columns: minmax(200px, 766px);
+  background: url("./../images/slider-2/slider-2-bcg.png") no-repeat;
+  justify-content: center;
+  background-size: cover;
+}
+.slider-feedback__wrap {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(26px);
+  padding: 75px 16px;
+}
+@-moz-document url-prefix() {
+  .slider-feedback__wrap {
+    background: black;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+.slider-feedback p {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.slider-feedback__title-1 {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+  margin-bottom: 30px;
+}
+.slider-feedback__title-2 {
+  font-family: "Playfair Display", "serif";
+  font-size: 40px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto 50px;
+}
+.slider-feedback__feedback {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  max-width: 561px;
+  margin: 0 auto 18px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  transition: 0.5s;
+  opacity: 1;
+  height: 200px;
+}
+.slider-feedback__person {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 106px;
+  transition: 0.5s;
+}
+.slider-feedback__btn-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+}
+.slider-feedback__dot-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  column-gap: 20px;
+}
+.slider-feedback__dot {
+  width: 6px;
+  height: 6px;
+  background: rgba(196, 196, 196, 0.45);
+  border-radius: 50px;
+}
+.slider-feedback__dot:nth-child(1) {
+  background-color: #FF9900;
+  width: 9px;
+  height: 9px;
+}
+.slider-feedback__left-arrow {
+  cursor: pointer;
+}
+.slider-feedback__left-arrow path {
+  stroke: #FF9900;
+}
+.slider-feedback__right-arrow {
+  cursor: pointer;
+}
+.slider-feedback__right-arrow path {
+  stroke: rgba(196, 196, 196, 0.45);
+}
+
+/*# sourceMappingURL=slider-feedback.css.map */

@@ -1,0 +1,99 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(366px, 550px) 1fr;
+}
+@media (max-width: 1300px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px max-content;
+  }
+}
+.about__yellow {
+  width: 200px;
+  height: 200px;
+  background-color: #FFB800;
+  padding-left: 34px;
+}
+.about__yellow span {
+  font-family: "Playfair Display", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  color: #FFFFFF;
+}
+.about__yellow p {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.about__years {
+  background: url("./../images/about/years-bcg.png") no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+  height: 750px;
+}
+@media (max-width: 1300px) {
+  .about__years {
+    height: 250px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.about__who-are {
+  display: grid;
+  grid-template-columns: minmax(260px, 542px);
+  grid-template-rows: repeat(3, min-content);
+  align-content: center;
+  justify-content: center;
+  background: url("../images/about/who-are.png") no-repeat 100% 231%;
+  padding: 32px 16px;
+}
+@media (min-width: 1440px) {
+  .about__who-are {
+    grid-template-columns: minmax(260px, 742px);
+  }
+}
+@media (max-width: 1300px) {
+  .about__who-are {
+    align-content: start;
+    justify-content: start;
+    background: url("../images/about/who-are.png") no-repeat 100% 100%;
+  }
+}
+.about__who-are p {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+@media (min-width: 1440px) {
+  .about__who-are p {
+    font-size: 28px;
+  }
+}
+.about__who-are p:first-child {
+  text-transform: uppercase;
+  color: #FF9900;
+  margin-bottom: 8px;
+}
+.about__who-are p:nth-child(2) {
+  font-family: "Playfair Display", "serif";
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+@media (min-width: 1440px) {
+  .about__who-are p:nth-child(2) {
+    font-size: 50px;
+  }
+}
+.about__who-are p:nth-child(3) {
+  color: #7C7C7C;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,78 @@
+.call-form-bcg {
+  background-color: #FFB800;
+  display: grid;
+  grid-template-columns: minmax(200px, 700px);
+  justify-content: center;
+  padding: 45px 16px;
+}
+
+.form p:nth-child(1) {
+  font-family: " Playfair Display", "serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.form p:nth-child(2) {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  margin-bottom: 43px;
+}
+.form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px white;
+  outline: none;
+  padding-bottom: 5px;
+}
+.form input::placeholder {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  color: rgba(255, 255, 255, 0.72);
+}
+.form__name-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 110px;
+  margin-bottom: 68px;
+}
+@media (max-width: 520px) {
+  .form__name-wrap {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+    margin-bottom: 45px;
+  }
+}
+.form__message {
+  display: block;
+  width: 100%;
+  margin-bottom: 45px;
+}
+.form__btn {
+  width: 128px;
+  height: 42px;
+  background: #FFFFFF;
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  color: #FFB800;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+}
+
+/*# sourceMappingURL=call-form.css.map */

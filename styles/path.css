@@ -1,0 +1,128 @@
+.path {
+  background-color: black;
+  position: relative;
+}
+.path__wrap {
+  display: grid;
+  grid-template-columns: minmax(200px, 1050px);
+  justify-content: center;
+  padding: 65px 16px 126px;
+}
+.path__item-wrap {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  justify-content: space-between;
+  position: relative;
+  column-gap: 10px;
+}
+@media (max-width: 950px) {
+  .path__item-wrap {
+    grid-template-columns: minmax(300px, max-content);
+    row-gap: 19px;
+  }
+}
+.path__circle {
+  background: url("../images/path/1.svg") no-repeat;
+  width: 68px;
+  height: 68px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: "Playfair Display", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 29px;
+  background-color: black;
+  background-color: black;
+}
+@media (max-width: 950px) {
+  .path__circle {
+    margin-bottom: 0;
+  }
+}
+.path__circle span {
+  margin-top: -10px;
+}
+.path__circle_bcg-2 {
+  background: url("../images/path/2.svg") no-repeat;
+  background-size: 68px 68px;
+  background-color: black;
+}
+.path__circle_bcg-3 {
+  background: url("../images/path/3.svg") no-repeat;
+  background-size: 68px 68px;
+  background-color: black;
+}
+.path__circle_bcg-4 {
+  background: url("../images/path/4.svg") no-repeat;
+  background-size: 68px 68px;
+  background-color: black;
+}
+.path__circle_bcg-5 {
+  background: url("../images/path/5.svg") no-repeat;
+  background-size: 68px 68px;
+  background-color: black;
+}
+.path__circle_bcg-6 {
+  background: url("../images/path/6.svg") no-repeat;
+  background-size: 68px 68px;
+  background-color: black;
+}
+.path__item {
+  border-radius: 100%;
+  z-index: 2;
+}
+@media (max-width: 950px) {
+  .path__item {
+    display: grid;
+    grid-template-columns: 68px minmax(200px, max-content);
+    align-items: center;
+    column-gap: 20px;
+  }
+}
+
+.path__text {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.title {
+  font-family: "Gilroy", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  text-transform: uppercase;
+  color: #ff9900;
+  margin-bottom: 8px;
+}
+
+.title2 {
+  font-family: "Playfair Display", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-bottom: 96px;
+}
+
+.line {
+  background-color: #ffffff;
+  height: 2px;
+  position: absolute;
+  top: 25%;
+  width: 90%;
+  color: white;
+}
+@media (max-width: 950px) {
+  .line {
+    display: none;
+  }
+}
